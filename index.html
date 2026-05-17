@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>lector mental</title>
+</head>
+
+<body>
+
+        <h1>lector mental</h1>
+
+        <p id="texto">piensa en un numero cabeza de groseria >:v</p>
+
+        <input type="number" id="numero">
+
+        <button id="boton" onclick="leermente()">
+            descubrir
+        </button>
+
+        <h2 id="resultado"></h2>
+
+        <script>
+            
+            function leermente() {
+
+                let numero =
+
+document . getElementById("numero") . value;
+
+                // OCULTAR TODO
+
+document . getElementById("texto") .style.display = "none";
+
+document . getElementById("numero") .style.display = "none";
+
+document . getElementById("boton") .style.display = "none";
+
+                // mostrar carga
+
+document . getElementById("resultado") .innerHTML = "leyendo mente gei :0"
+
+                // esperar 3 segundos (3000 ms)
+                setTimeout(function() {
+
+document . getElementById("resultado") .innerHTML=
+                                                        "El numero que pensaste es " + numero;
+
+                }, 3000);
+
+        
+            }
+
+        </script>
+
+</body>
+
+</html>
